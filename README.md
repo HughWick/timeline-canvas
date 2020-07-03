@@ -6,8 +6,13 @@
 # 感言
 感谢liaoanran提供的源码，原地址：https：//github.com/liaoanran/timeline-canvas
 
+
+
 # 说明
 该录像liaoanran时间轴js二次修改。
+
+## 修改后效果如下 ##
+![](https://i.imgur.com/zW11Lcx.png)
 
 ## **修改内容** ##
 **1.**
