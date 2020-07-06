@@ -281,22 +281,20 @@ function mousewheelFunc() {
  * @param {*} e
  */
 function get_cursor_x_position(e) {
-  var posx = 0;
+    var posx = 0;
 
-  if (!e) {
-    e = window.event;
-  }
-
-  if (e.pageX || e.pageY) {
-    posx = e.pageX;
-  } else if (e.clientX || e.clientY) {
-    posx =
-      e.clientX +
-      document.body.scrollLeft +
-      document.documentElement.scrollLeft;
-  }
-
-  return posx;
+    if (!e) {
+        e = window.event;
+    }
+    if (e.offsetX || e.offsetY) {//相对于事件的XY轴
+        posx = e.offsetX
+    }
+    // if (e.pageX || e.pageY) {//相对于浏览器滚动区域
+    //     posx = e.pageX;
+    // } else if (e.clientX || e.clientY) {//相对于浏览器不滚动屏幕
+    //     posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+    // }
+    return posx;
 }
 
 /**
